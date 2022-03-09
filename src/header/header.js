@@ -13,8 +13,10 @@ const Header = () => {
                 <div className='col-1 text-center'>
                     <h6 className='m-0'>Teams</h6>
                 </div>
+
                 <div className='col-10 pr-3'>
                     <div className='d-flex justify-content-end align-items-center'>
+
                         {/* notification icon */}
                         <div className='position-relative mr-3'>
                             <div className='notify-Count'>{dataJson.current_user.notifications_count}</div>
@@ -22,6 +24,7 @@ const Header = () => {
                                 <img src={iconNotify} />
                             </div>
                         </div>
+
                         {/* user name & avatar */}
                         <div className='user-name'>
                             <p className='m-0'>Hello, {dataJson.current_user.name}</p>
