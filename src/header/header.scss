@@ -1,0 +1,49 @@
+.header-pannel{
+    position: sticky;
+    top: 0;
+    height: 4rem;
+    background: #FFF;
+    border-bottom: 1px solid #E2E2E2;
+    margin-left: 4rem;
+}
+.border-right-1 {
+    border-right: 1px solid #E2E2E2;
+}
+.text-gray{
+    color: #1A1919;
+    font-weight: 600;
+    opacity: .5;
+}
+
+.notify-Count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: #2995DA;
+    border-radius: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #FFF;
+    font-size: 11px;
+    font-weight: 600;
+}
+.user-name p{
+    color: #1A1919;
+    font-weight: 600;
+    opacity: .5;
+}
+.user-img img{
+    border-radius: 5rem;
+}
+
+.arrow-down {
+    width: 0px;
+    height: 0px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid rgba(0, 0, 0, 0.411);
+  }
