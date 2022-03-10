@@ -31,7 +31,7 @@ const App = () => {
             </div>
 
             {/* create new team button  */}
-            <button className='create-new-btn d-flex align-items-center text-uppercase'><span class="material-icons mr-3">add</span>
+            <button className='create-new-btn d-flex align-items-center text-uppercase'><span className="material-icons mr-3">add</span>
               Create New Team</button>
           </div>
 
@@ -55,7 +55,7 @@ const App = () => {
 
             {/* Search button */}
             <div className='d-flex align-items-center'>
-              <button className='search-btn pt-2'><span class="material-icons">search</span></button>
+              <button className='search-btn pt-2'><span className="material-icons">search</span></button>
               <Form >
                 <FormControl
                   type="search"

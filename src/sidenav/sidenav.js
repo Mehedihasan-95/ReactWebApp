@@ -48,7 +48,7 @@ const Sidenav = () => {
 
                 {/* Help button  */}
                 <div className='nav-item'>
-                    <a class="nav-link" href="#">
+                    <a className="nav-link" href="#">
                         <img className='img-fluid' src={iconHelp} />
                     </a>
                 </div>

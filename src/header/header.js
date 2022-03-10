@@ -1,7 +1,7 @@
 import React from 'react'
 import './header.scss'
 import iconNotify from '../assets/icons/icon-mail.svg'
-import dataJson from '../assets/data/data.json'
+import dataObj from '../assets/data/data.json'
 
 const Header = () => {
     return (
@@ -19,7 +19,7 @@ const Header = () => {
 
                         {/* notification icon */}
                         <div className='position-relative mr-3'>
-                            <div className='notify-Count'>{dataJson.current_user.notifications_count}</div>
+                            <div className='notify-Count'>{dataObj.current_user.notifications_count}</div>
                             <div className='notify-icon'>
                                 <img src={iconNotify} />
                             </div>
@@ -27,10 +27,10 @@ const Header = () => {
 
                         {/* user name & avatar */}
                         <div className='user-name'>
-                            <p className='m-0'>Hello, {dataJson.current_user.name}</p>
+                            <p className='m-0'>Hello, {dataObj.current_user.name}</p>
                         </div>
                         <div className='user-img px-2 cursor-pointer'>
-                            <img className='img-fluid' src={dataJson.current_user.avatar} width="25" />
+                            <img className='img-fluid' src={dataObj.current_user.avatar} width="25" />
                         </div>
                         <div className='arrow-down '></div>
                     </div>
