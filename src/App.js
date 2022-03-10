@@ -4,10 +4,13 @@ import Header from './header/header';
 import Sidenav from './sidenav/sidenav';
 import { Tabs, Tab, Form, FormControl } from 'react-bootstrap';
 import ViewBoxs from './component/viewBoxs'
-
 import iconTeamsBlack from './assets/icons/icon-teams-black.svg';
+import ActivitiesCard from './component/activitiesCard'
+import dataObj from './assets/data/data.json'
 
 
+
+const personActivity = dataObj.activities;
 const App = () => {
 
 
@@ -68,7 +71,32 @@ const App = () => {
 
           </div>
 
-          <ViewBoxs />
+          {/* All Items */}
+          <div className='d-flex m-4_5 align-items-start justify-content-between'>
+
+            <div className='col-9 pr-4_5'>
+              <ViewBoxs />
+            </div>
+
+            {/* Activities */}
+            <div className='col-3 w- bg-white box-shadow-default'>
+
+              <div className='header-title border-bottom-1'>
+                <div className='p-3 d-flex justify-content-between align-items-center'>
+                  <h6 className='m-0 font-weight-600 '>Activity</h6>
+                </div>
+              </div>
+
+              {/* Activities list */}
+              <div className='p-3'>
+                {personActivity.map((activity) => {
+                  return <ActivitiesCard key={activity.id} activity={activity} />
+                })}
+              </div>
+
+            </div>
+
+          </div>
         </div>
       </div>
     </>

@@ -21,7 +21,7 @@ const Header = () => {
                         <div className='position-relative mr-3'>
                             <div className='notify-Count'>{dataObj.current_user.notifications_count}</div>
                             <div className='notify-icon'>
-                                <img src={iconNotify} />
+                                <img src={iconNotify} width="25" />
                             </div>
                         </div>
 
@@ -30,7 +30,7 @@ const Header = () => {
                             <p className='m-0'>Hello, {dataObj.current_user.name}</p>
                         </div>
                         <div className='user-img px-2 cursor-pointer'>
-                            <img className='img-fluid' src={dataObj.current_user.avatar} width="25" />
+                            <img className='img-fluid' src={dataObj.current_user.avatar} width="30" />
                         </div>
                         <div className='arrow-down '></div>
                     </div>
