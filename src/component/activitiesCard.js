@@ -17,7 +17,6 @@ const ActivitiesCard = ({ activity }) => {
             break;
     }
 
-    console.log(actionText)
     return (
 
         <div className='d-flex align-items-start py-2'>
