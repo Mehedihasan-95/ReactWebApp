@@ -19,6 +19,10 @@
 
         img{opacity: .3;}
     }
-    .side-nav{
+
+        .side-nav {
         margin-top: -4rem;
-    }
+        position: sticky;
+        top: 0;
+        left: 0;
+      }

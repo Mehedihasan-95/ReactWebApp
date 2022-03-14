@@ -2,7 +2,7 @@ import { React, useState } from 'react'
 import './App.scss';
 import Header from './header/header';
 import Sidenav from './sidenav/sidenav';
-import { Tabs, Tab, Form, FormControl } from 'react-bootstrap';
+import { Tabs, Navbar, Form, FormControl, Nav } from 'react-bootstrap';
 import ViewBoxs from './component/viewBox/viewBoxs'
 import iconTeamsBlack from './assets/icons/icon-teams-black.svg';
 import ActivitiesCard from './component/activitiesCard'
@@ -14,9 +14,17 @@ const personActivity = dataObj.activities;
 const teamInformation = dataObj.teams;
 const App = () => {
 
+  const [data, setData] = useState(teamInformation);
 
-  const [key, setKey] = useState('all');
-
+  const filterAllData = () => {
+    setData(teamInformation.filter(teamInfo => teamInfo))
+  }
+  const filterFavData = () => {
+    setData(teamInformation.filter(teamInfo => teamInfo.is_favorited))
+  }
+  const filterArcData = () => {
+    setData(teamInformation.filter(teamInfo => teamInfo.is_archived))
+  }
 
   return (
     <>
@@ -43,17 +51,18 @@ const App = () => {
           <div className='d-flex bg-white justify-content-between align-items-center pt-3 px-3'>
             <div className='filter-buttons'>
 
-              <Tabs onSelect={(k) => setKey(k)} defaultActiveKey="all" id="uncontrolled-tab-example" className="mb-3">
-                <Tab eventKey="all" title="All">
-                  {key}
-                </Tab>
-                <Tab eventKey="fav" title="Fav">
-                  {key}
-                </Tab>
-                <Tab eventKey="arc" title="Arc" >
-                  {key}
-                </Tab>
-              </Tabs>
+              <button onClick={filterAllData}>All</button>
+              <button onClick={filterFavData}>Fev</button>
+              <button onClick={filterArcData}>Arc</button>
+
+              <Nav variant="pills" className="flex-column">
+                <Nav.Item>
+                  <Nav.Link eventKey={filterAllData}>Tab 1</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link eventKey={filterFavData} >Tab 2</Nav.Link>
+                </Nav.Item>
+              </Nav>
 
             </div>
 
@@ -72,7 +81,7 @@ const App = () => {
 
           </div>
 
-          {/* All Items */}
+
           <div className='d-flex m-4_5 align-items-start justify-content-between'>
             <div className='col-9 pr-4_5'>
 
@@ -89,7 +98,7 @@ const App = () => {
                 {/* Box Content */}
                 <div className='p-3'>
                   <div className='d-flex flex-wrap'>
-                    {teamInformation.map((teamInfo) => {
+                    {data.map((teamInfo) => {
                       return <ViewBoxs key={teamInfo.id} teamInfo={teamInfo} />
                     })}
 
