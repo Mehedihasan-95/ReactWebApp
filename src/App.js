@@ -84,50 +84,49 @@ const App = () => {
 
           <div className='d-flex m-4_5 align-items-start justify-content-between'>
             <div className='col-9 pr-4_5'>
-
+              <ViewBoxs />
               {/* All Items List */}
-              <div className='bg-white box-shadow-default'>
-
+              {/* <div className='bg-white box-shadow-default'>
                 <div className='header-title border-bottom-1 '>
                   <div className=' p-3 d-flex justify-content-between align-items-center'>
                     <h6 className='m-0 font-weight-600 '>All Teams</h6>
                     <h6 className='m-0 font-size-0_8rem opacity-50'>Showing 55 of 55 items</h6>
                   </div>
-                </div>
+                </div> */}
 
-                {/* Box Content */}
-                <div className='p-3'>
+              {/* Box Content */}
+              {/* <div className='p-3'>
                   <div className='d-flex flex-wrap'>
                     {data.map((teamInfo) => {
                       return <ViewBoxs key={teamInfo.id} teamInfo={teamInfo} />
                     })}
 
                   </div>
-                </div>
+                </div> */}
+            </div>
+          </div>
+
+          {/* Activities */}
+          <div className='col-3 w- bg-white box-shadow-default'>
+
+            <div className='header-title border-bottom-1'>
+              <div className='p-3 d-flex justify-content-between align-items-center'>
+                <h6 className='m-0 font-weight-600 '>Activity</h6>
               </div>
             </div>
 
-            {/* Activities */}
-            <div className='col-3 w- bg-white box-shadow-default'>
-
-              <div className='header-title border-bottom-1'>
-                <div className='p-3 d-flex justify-content-between align-items-center'>
-                  <h6 className='m-0 font-weight-600 '>Activity</h6>
-                </div>
-              </div>
-
-              {/* Activities list */}
-              <div className='p-3'>
-                {personActivity.map((activity) => {
-                  return <ActivitiesCard key={activity.id} activity={activity} />
-                })}
-              </div>
-
+            {/* Activities list */}
+            <div className='p-3'>
+              {personActivity.map((activity) => {
+                return <ActivitiesCard key={activity.id} activity={activity} />
+              })}
             </div>
 
           </div>
+
         </div>
       </div>
+      {/* </div> */}
     </>
 
 
