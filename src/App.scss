@@ -26,3 +26,17 @@
     box-shadow: none ;
   }
 }
+.tabBtn {
+  background: transparent;
+  border: 0;
+  font-weight: 600;
+}
+
+.nav-link-btn.nav-pills{
+  .nav-item{padding: 0;}
+  .nav-link.active{
+    border-radius: 0;
+    color: #0083E3 !important;
+    background: transparent !important;
+    border-bottom: 2px solid #0083E3 !important;}
+}

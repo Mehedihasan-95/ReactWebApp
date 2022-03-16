@@ -1,26 +1,25 @@
 import './viewBoxs.scss'
 import dataObj from '../../assets/data/data.json'
 
-const ViewBoxs = () => {
-
+const ViewBoxs = ({ teamInfos, header, itemCount, allData }) => {
     return (
         <>
             {/* All Items List */}
             <div className='bg-white box-shadow-default' >
                 <div className='header-title border-bottom-1 '>
-                    <div className=' p-3 d-flex justify-content-between align-items-center'>
-                        <h6 className='m-0 font-weight-600 '>All Teams</h6>
-                        <h6 className='m-0 font-size-0_8rem opacity-50'>Showing 55 of 55 items</h6>
+                    <div className='p-3 d-flex justify-content-between align-items-center'>
+                        <h6 className='m-0 font-weight-600 '>{header}</h6>
+                        <h6 className='m-0 font-size-0_8rem opacity-50'>Showing {itemCount} out of {allData} teams </h6>
                     </div>
                 </div>
 
                 {/* Box Content */}
                 <div className='p-3'>
-                    {dataObj.teams.map((teamInfo) => {
-                        console.log(teamInfo);
-                        return <div className='d-flex flex-wrap'>
-                            <div className='col-4 p-2'>
-                                <div className={`${teamInfo?.is_archived ? 'archived' : ''} border-1px border-radius-4`}>
+                    <div className='d-flex flex-wrap'>
+
+                        {teamInfos.map((teamInfo) => {
+                            return <div key={teamInfo.id} className='col-4 p-2'>
+                                <div className={`${teamInfo.is_archived ? 'archived' : ''} border-1px border-radius-4`}>
                                     <div className='p-3'>
                                         <div className='d-flex justify-content-between align-items-start pb-2'>
                                             <div className='d-flex'>
@@ -53,8 +52,8 @@ const ViewBoxs = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    })}
+                        })}
+                    </div>
 
                 </div>
             </div>
