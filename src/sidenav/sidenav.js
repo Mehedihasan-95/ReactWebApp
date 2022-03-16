@@ -15,30 +15,30 @@ const Sidenav = () => {
                 <div>
                     {/* logo */}
                     <a className="d-block py-3 px-0 text-center" href="#">
-                        <img src={logo} />
+                        <img alt="" src={logo} />
                     </a>
                     <nav className="navbar">
                         <ul className="navbar-nav w-100">
 
                             <li className="nav-item ">
                                 <a className="nav-link" href="#">
-                                    <img src={iconCampaign} />
+                                    <img alt="" src={iconCampaign} height="25" />
                                 </a>
                             </li>
                             <li className="nav-item active">
                                 <a className="nav-link" href="#">
-                                    <img src={iconTeams} />
+                                    <img alt="" src={iconTeams} height="25" />
                                 </a>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="#">
-                                    <img src={iconLeads} />
+                                    <img alt="" src={iconLeads} height="25" />
                                 </a>
                             </li>
 
                             <li className="nav-item">
                                 <a className="nav-link" href="#">
-                                    <img src={iconReports} />
+                                    <img alt="" src={iconReports} height="25" />
                                 </a>
                             </li>
 
@@ -48,8 +48,8 @@ const Sidenav = () => {
 
                 {/* Help button  */}
                 <div className='nav-item'>
-                    <a class="nav-link" href="#">
-                        <img className='img-fluid' src={iconHelp} />
+                    <a className="nav-link" href="#">
+                        <img alt="" className='img-fluid' src={iconHelp} />
                     </a>
                 </div>
             </div>

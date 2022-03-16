@@ -5,11 +5,8 @@
     background: #FFF;
     border-bottom: 1px solid #E2E2E2;
     margin-left: 4rem;
-}
-.border-right-1 {
-    border-right: 1px solid #E2E2E2;
-}
-.text-gray{
+    z-index: 100;
+}.text-gray{
     color: #1A1919;
     font-weight: 600;
     opacity: .5;
@@ -35,9 +32,6 @@
     color: #1A1919;
     font-weight: 600;
     opacity: .5;
-}
-.user-img img{
-    border-radius: 5rem;
 }
 
 .arrow-down {

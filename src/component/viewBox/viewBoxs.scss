@@ -1,0 +1,18 @@
+.textLimit {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+            line-clamp: 2; 
+    -webkit-box-orient: vertical;
+}
+.font-size-1_3rem{font-size: 1.3rem;}
+span.yellow{
+    color: #F8CE43;
+    opacity: 1;
+}
+.archived{
+    background: #EBEEF2;
+    &.border-1px{border: 1px solid #E4E7EC !important;}
+    .fev-star{visibility: hidden;}
+}

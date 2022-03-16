@@ -1,0 +1,49 @@
+.create-new-btn {
+    border: none;
+    border-radius: 4px;
+    padding: 6px 10px;
+    background: #40D2BF;
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 600;
+    &:hover{background: #55e0ce;}
+}
+.search-btn {
+  background: transparent;
+  border: transparent;
+  color: #999999;
+  margin: 0;
+  padding: 0;
+  font-size: 7px;
+}
+.search-field {
+  background-color: #FFF !important;
+  border: none !important;
+  outline: none !important;
+  &:focus{
+    outline: none ;
+    border-color: transparent ;
+    box-shadow: none ;
+  }
+}
+.tabBtn {
+  background: transparent;
+  border: 0;
+  font-weight: 600; 
+  padding: 0.5rem 1rem;
+  width: 100%;
+  height: 100%;
+}
+
+.nav-link-btn.nav-pills{
+  .nav-item{padding: 0;}
+  .nav-link {
+    padding: 0;
+    &.active{
+      border-radius: 0;
+      color: #0083E3 !important;
+      background: transparent !important;
+      border-bottom: 2px solid #0083E3 !important;
+    }
+  }
+}
