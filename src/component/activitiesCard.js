@@ -21,12 +21,12 @@ const ActivitiesCard = ({ activity }) => {
 
         <div className='d-flex align-items-start py-2'>
             <div className='user-img px-2'>
-                <img className='img-fluid' src={activity.person?.avatar} width="30" />
+                <img alt="" className='img-fluid' src={activity.person.avatar} width="30" />
             </div>
             {/* activities title */}
             <div className='activities-title'>
                 <p className="m-0"> {actionText}</p>
-                <p className='m-0 font-size-0_7rem opacity-50'><strong> {activity.created_at} </strong></p>
+                <p className='m-0 font-size-0_7rem opacity-50'><strong> {activity?.created_at} </strong></p>
             </div>
         </div>
     )

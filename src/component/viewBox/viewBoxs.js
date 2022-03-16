@@ -1,5 +1,4 @@
 import './viewBoxs.scss'
-import dataObj from '../../assets/data/data.json'
 
 const ViewBoxs = ({ teamInfos, header, itemCount, allData }) => {
     return (
@@ -24,7 +23,7 @@ const ViewBoxs = ({ teamInfos, header, itemCount, allData }) => {
                                         <div className='d-flex justify-content-between align-items-start pb-2'>
                                             <div className='d-flex'>
                                                 <div className='title-img'>
-                                                    <img className='border-radius-4' src={teamInfo?.image} width="35" height="35" />
+                                                    <img alt="" className='border-radius-4' src={teamInfo?.image} width="35" height="35" />
                                                 </div>
                                                 <div className='title-text pl-2'>
                                                     <h6 className='font-weight-600'>{teamInfo.name}</h6>

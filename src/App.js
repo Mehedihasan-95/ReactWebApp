@@ -2,7 +2,7 @@ import { React, useState } from 'react'
 import './App.scss';
 import Header from './header/header';
 import Sidenav from './sidenav/sidenav';
-import { Tab, Navbar, Form, FormControl, Nav } from 'react-bootstrap';
+import { Form, FormControl, Nav } from 'react-bootstrap';
 import ViewBoxs from './component/viewBox/viewBoxs'
 import iconTeamsBlack from './assets/icons/icon-teams-black.svg';
 import ActivitiesCard from './component/activitiesCard'
@@ -43,7 +43,7 @@ const App = () => {
 
             {/* title & icon  */}
             <div className='header-title d-flex align-items-center'>
-              <img className='img-fliud opacity-50' src={iconTeamsBlack} width="30" alt='' />
+              <img alt="" className='img-fliud opacity-50' src={iconTeamsBlack} width="30" />
               <h3 className='m-0 font-weight-600 pl-2'>Teams</h3>
             </div>
 
@@ -78,7 +78,6 @@ const App = () => {
                 />
               </Form>
             </div>
-
           </div>
 
 
