@@ -1,5 +1,5 @@
 # React Web App
-#### Filter data from api/json data
+#### Filtering data according to api/json response 
 
 ## Installation
 
